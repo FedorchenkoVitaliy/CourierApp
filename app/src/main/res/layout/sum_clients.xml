@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstDay"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView2" />
+
+    <EditText
+        android:id="@+id/firstMonth"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/firstDay"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView2" />
+
+    <EditText
+        android:id="@+id/firstYear"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/firstMonth"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView2" />
+
+    <EditText
+        android:id="@+id/lastDay"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstDay" />
+
+    <EditText
+        android:id="@+id/lastMonth"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/lastDay"
+        app:layout_constraintTop_toBottomOf="@+id/firstMonth" />
+
+    <EditText
+        android:id="@+id/lastYear"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lastMonth"
+        app:layout_constraintTop_toBottomOf="@+id/firstYear" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sumData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_add"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/dark_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastDay"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/textSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toEndOf="@+id/sumData"
+        app:layout_constraintTop_toBottomOf="@+id/lastMonth" />
+
+</android.support.constraint.ConstraintLayout>
