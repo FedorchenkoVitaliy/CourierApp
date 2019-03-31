@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-//Допомыжний клас для адаптера
+//Допоміжний клас для адаптера
 public class ShowClients extends BaseAdapter {
 
     Context ctx;
