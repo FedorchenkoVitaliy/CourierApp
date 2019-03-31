@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /* Актівіті для реалізації підрахунку кількості клієнтів з певного числа до певного числа, яке
-ви оберете(працюэ тыльки в межах одного мысяця) */
+ви оберете(працює тільки в межах одного місяця) */
 public class SumClients extends AppCompatActivity  implements View.OnClickListener  {
 
     TextView textSum;
